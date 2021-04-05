@@ -1,6 +1,6 @@
 # PowerShell Core Setup
 
-About [PowerShell Core](https://github.com/PowerShell/PowerShell) any setting
+About [PowerShell Core](https://github.com/PowerShell/PowerShell) setting
 
 ## Requirements
 
@@ -20,3 +20,7 @@ $ scoop install posh-git
 ```shell
 $ scoop install https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/oh-my-posh.json
 ```
+
+## Patched Fonts
+
+- [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts)
