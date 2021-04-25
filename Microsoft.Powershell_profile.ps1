@@ -3,6 +3,8 @@ Import-Module posh-git
 function touch {set-content -Path ($args[0]) -Value ($null)}
 
 [ScriptBlock]$Prompt = {
+    $root = "a7894"
+    $ohMyPoshVersion = "3.144.0"
     $lastCommandSuccess = $?
     $realLASTEXITCODE = $global:LASTEXITCODE
     $errorCode = 0
@@ -16,9 +18,9 @@ function touch {set-content -Path ($args[0]) -Value ($null)}
         }
     }
     $startInfo = New-Object System.Diagnostics.ProcessStartInfo
-    $startInfo.FileName = "C:\Users\x06u4\scoop\apps\oh-my-posh\3.130.1\bin\oh-my-posh.exe"
+    $startInfo.FileName = "C:\Users\$root\scoop\apps\oh-my-posh\$ohMyPoshVersion\bin\oh-my-posh.exe"
     $cleanPWD = $PWD.ProviderPath.TrimEnd("\")
-    $startInfo.Arguments = "-config=""C:\Users\x06u4\scoop\apps\oh-my-posh\current\themes\custom.omp.json"" -error=$errorCode -pwd=""$cleanPWD"""
+    $startInfo.Arguments = "-config=C:\Users\$root\scoop\apps\oh-my-posh\current\themes\custom.omp.json -error=""$errorCode"" -pwd=""$cleanPWD"""
     $startInfo.Environment["TERM"] = "xterm-256color"
     $startInfo.CreateNoWindow = $true
     $startInfo.StandardOutputEncoding = [System.Text.Encoding]::UTF8
