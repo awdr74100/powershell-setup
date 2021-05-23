@@ -39,4 +39,4 @@ $ scoop install https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/dow
 ## Patched Fonts
 
 - [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts)
-  - [Fira Code Nerd Font](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Medium/complete/Fira%20Code%20Medium%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.ttf)
+  - [Fira Code](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Medium/complete/Fira%20Code%20Medium%20Nerd%20Font%20Complete%20Windows%20Compatible.ttf)
